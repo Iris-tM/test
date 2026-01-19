@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output files
+output/
+*.csv
+*.xlsx
+*.json
+!requirements.txt
+!.env.example
+
+# Temporary files
+nul
+*.log
+*.tmp
+.DS_Store
+
+# Project specific
+TODO.md
+TEST_RESULTS.md
+ai_app_listing_dates.csv
+get_ai_app_listing*.py
+get_ai_listing_date.py
+2026-01-20-*.txt
+
+# Environment
+.env
+.env.local
+
+# Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
