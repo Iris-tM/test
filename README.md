@@ -192,6 +192,23 @@ stork_agent/
 
 后续可扩展支持 **TuShare** 等其他数据源。
 
+## 致谢
+
+本项目的部署主要依赖以下开源 Python 库，非常感谢这些优秀的开源项目！请给这些仓库多点 ⭐
+
+| 库名 | 说明 | 链接 |
+|------|------|------|
+| **AkShare** | 免费、好用的财经数据接口 | [akshare](https://github.com/akfamily/akshare) |
+| **FastAPI** | 现代、快速的 Web 框架 | [fastapi](https://github.com/fastapi/fastapi) |
+| **Plotly** | 交互式图表可视化库 | [plotly](https://github.com/plotly/plotly.py) |
+| **Pandas** | 强大的数据分析和处理库 | [pandas](https://github.com/pandas-dev/pandas) |
+| **Pydantic** | 数据验证和设置管理 | [pydantic](https://github.com/pydantic/pydantic) |
+| **Uvicorn** | ASGI 服务器 | [uvicorn](https://github.com/encode/uvicorn) |
+| **ModelContextProtocol** | MCP 协议实现 | [modelcontextprotocol](https://github.com/modelcontextprotocol) |
+| **Typer** | 命令行界面构建库 | [typer](https://github.com/fastapi/typer) |
+
+感谢所有为开源社区做出贡献的开发者！🙏
+
 ## 配置说明
 
 主要配置项（环境变量或 .env 文件）：
