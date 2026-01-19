@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation>
+  <description>Stork Agent MCP Server - 评估问题集</description>
+
+  <!-- 问题 1: 基本查询 -->
+  <qa_pair>
+    <question>查询贵州茅台（股票代码 600519）的当前股价，并告诉我它的市盈率是多少。</question>
+    <answer>贵州茅台的当前股价和市盈率（PE）数据会以数值形式返回。例如：股价约1680元，PE约28.5倍。</answer>
+  </qa_pair>
+
+  <!-- 问题 2: 选股筛选 -->
+  <qa_pair>
+    <question>筛选市盈率低于20且市值超过100亿元的股票，返回前10只股票的代码和名称。</question>
+    <answer>符合条件的股票列表，包含代码和名称，如：600519 贵州茅台、000858 五粮液等。</answer>
+  </qa_pair>
+
+  <!-- 问题 3: 多股票对比 -->
+  <qa_pair>
+    <question>对比贵州茅台（600519）和五粮液（000858）这两只股票过去30天的涨跌幅，告诉我哪只股票表现更好。</question>
+    <answer>对比结果会显示两只股票的涨跌幅数据。例如：贵州茅台涨跌幅+5.2%，五粮液涨跌幅+3.8%，贵州茅台表现更好。</answer>
+  </qa_pair>
+
+  <!-- 问题 4: 技术指标 -->
+  <qa_pair>
+    <question>计算贵州茅台（600519）的20日移动平均线（MA20）指标，并返回最新的指标值。</question>
+    <answer>MA20指标的最新值，是一个具体的数值，如：1650.50元。</answer>
+  </qa_pair>
+
+  <!-- 问题 5: 财务数据 -->
+  <qa_pair>
+    <question>查询贵州茅台（600519）的最新财务数据，包括营业收入、净利润和净资产收益率（ROE）。</question>
+    <answer>财务数据包含营业收入（亿元）、净利润（亿元）、ROE（%）等数值。例如：营收877亿元，净利润392亿元，ROE 28.5%。</answer>
+  </qa_pair>
+
+  <!-- 问题 6: 市场概览 -->
+  <qa_pair>
+    <question>查看当前市场概览，告诉我上证指数、深证成指和创业板指的最新点位和涨跌幅。</question>
+    <answer>三个主要指数的点位和涨跌幅数据。例如：上证指数3050点+0.5%，深证成指9850点+0.3%，创业板指1950点-0.2%。</answer>
+  </qa_pair>
+
+  <!-- 问题 7: 历史数据 -->
+  <qa_pair>
+    <question>获取贵州茅台（600519）最近30天的日线K线数据，并告诉我最近一天的收盘价。</question>
+    <answer>最近30天的K线数据，最新一天的收盘价数值。例如：1680.50元。</answer>
+  </qa_pair>
+
+  <!-- 问题 8: 股票搜索 -->
+  <qa_pair>
+    <question>搜索包含"白酒"关键词的股票，返回前5只匹配的股票代码和名称。</question>
+    <answer>包含"白酒"的股票列表，如：600519 贵州茅台、000858 五粮液、000568 泸州老窖等。</answer>
+  </qa_pair>
+
+  <!-- 问题 9: 分页操作 -->
+  <qa_pair>
+    <question>筛选所有市值大于1000亿元的股票，然后跳转到第2页查看结果，告诉我第2页第一只股票的代码。</question>
+    <answer>第2页第一只股票的代码，如：600519（具体取决于筛选结果）。</answer>
+  </qa_pair>
+
+  <!-- 问题 10: 综合分析 -->
+  <qa_pair>
+    <question>找出市盈率低于15且股价低于50元的股票，从结果中选择ROE最高的3只股票，返回它们的代码和ROE值。</question>
+    <answer>ROE最高的3只股票及其ROE值。例如：000858 ROE 25.3%、600519 ROE 28.5%、000568 ROE 22.1%。</answer>
+  </qa_pair>
+
+  <!-- 问题 11: K线图生成 -->
+  <qa_pair>
+    <question>获取贵州茅台（600519）最近30天的K线数据，并生成一个K线图（蜡烛图），图表文件应该保存在 output/charts/ 目录下。</question>
+    <answer>生成K线图HTML文件，文件路径格式：output/charts/kline_YYYYMMDD_HHMMSS.html。文件应包含蜡烛图、移动平均线（MA5/MA10/MA20/MA60）和成交量子图。</answer>
+  </qa_pair>
+
+  <!-- 问题 12: 价格走势图 -->
+  <qa_pair>
+    <question>绘制贵州茅台（600519）最近60天的价格走势图，要求为折线图形式，显示价格随时间的变化趋势。</question>
+    <answer>生成价格走势图HTML文件，文件路径格式：output/charts/trend_YYYYMMDD_HHMMSS.html。文件应包含时间序列折线图，X轴为日期，Y轴为价格。</answer>
+  </qa_pair>
+
+  <!-- 问题 13: 财务对比柱状图 -->
+  <qa_pair>
+    <question>对比贵州茅台（600519）、五粮液（000858）和泸州老窖（000568）的市值、PE和ROE三个指标，生成一个财务对比柱状图。</question>
+    <answer>生成财务对比图HTML文件，文件路径格式：output/charts/comparison_YYYYMMDD_HHMMSS.html。文件应包含三个子图，分别显示市值、PE和ROE的柱状对比。</answer>
+  </qa_pair>
+
+  <!-- 问题 14: MACD技术指标图 -->
+  <qa_pair>
+    <question>计算贵州茅台（600519）的MACD指标，并绘制包含DIF、DEA和MACD柱的完整MACD图表。</question>
+    <answer>生成MACD指标图HTML文件，文件路径格式：output/charts/macd_YYYYMMDD_HHMMSS.html。文件应包含DIF/DEA折线图和MACD柱状图的上下子图结构。</answer>
+  </qa_pair>
+
+  <!-- 问题 15: RSI技术指标图 -->
+  <qa_pair>
+    <question>计算贵州茅台（600519）的RSI（相对强弱指标），周期为14天，绘制RSI指标图并标注超买（>70）和超卖（<30）区域。</question>
+    <answer>生成RSI指标图HTML文件，文件路径格式：output/charts/indicator_YYYYMMDD_HHMMSS.html。文件应包含RSI折线图，并在70和30位置有虚线参考线标注。</answer>
+  </qa_pair>
+
+</evaluation>

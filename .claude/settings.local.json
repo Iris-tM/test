@@ -6,7 +6,24 @@
       "Bash(git checkout:*)",
       "Bash(git push:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git remote remove:*)",
+      "WebSearch",
+      "mcp__web-search-prime__webSearchPrime",
+      "Bash(dir)",
+      "Bash(pip install:*)",
+      "Bash(python test_ai_stocks.py:*)",
+      "Bash(python:*)",
+      "Bash(if [ -f \"C:\\\\Users\\\\zdn01\\\\Documents\\\\AI_projects\\\\main_projects\\\\stork_agent\\\\README.md\" ])",
+      "Bash(then echo \"exists\")",
+      "Bash(else echo \"not exists\")",
+      "Bash(fi)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "mcp__stork-agent__stork_query_stock",
+      "mcp__stork-agent__stork_calculate_indicator"
     ]
   }
 }

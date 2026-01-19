@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "stork-agent": {
+      "command": "python",
+      "args": ["-m", "stork_agent.mcp_server.server"],
+      "cwd": "C:\\Users\\zdn01\\Documents\\AI_projects\\main_projects\\stork_agent"
+    }
+  }
+}
